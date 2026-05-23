@@ -35,7 +35,7 @@ elem3.addEventListener("click",()=>{
 const from=document.getElementById("from");
 const to=document.getElementById("to");
 const departure=document.getElementById("departure");
-const ret=document.getElementById("return");
+const ret=document.getElementById("ret");
 const travellers=document.getElementById("travellers");
 
 const arr=[from,to,departure,ret,travellers];
