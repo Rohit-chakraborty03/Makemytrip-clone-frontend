@@ -31,3 +31,44 @@ elem3.addEventListener("click",()=>{
     elem2.style.opacity=0.5;
     elem3.style.opacity=1;
 })
+
+const from=document.getElementById("from");
+const to=document.getElementById("to");
+const departure=document.getElementById("departure");
+const ret=document.getElementById("return");
+const travellers=document.getElementById("travellers");
+
+const arr=[from,to,departure,ret,travellers];
+for(let i =0;i<arr.length;i++)
+{
+    arr[i].addEventListener("mouseenter",handlenter);
+    arr[i].addEventListener("mouseleave",handleleave);
+    arr[i].addEventListener("click",handleclick);
+}
+
+function handlenter(event)
+{
+    const name= event.currentTarget.id;
+    document.getElementById(name).style.backgroundColor="#f88ed891";
+    document.getElementById(name).style.color="hsl(299, 59%, 27%)";
+    document.getElementById(name).style.fontWeight="bold";
+
+
+}
+
+function handleleave(event)
+{
+     const name= event.currentTarget.id;
+    document.getElementById(name).style.backgroundColor="white";
+    document.getElementById(name).style.fontWeight="normal";
+    
+}
+
+function handleclick(event)
+{
+    const name= event.currentTarget.id;
+    document.getElementById(name).style.backgroundColor="#ffd4f292";
+    document.getElementById(name).style.fontWeight="bold";
+}
+
+
