@@ -23,8 +23,11 @@ body{
     right:20px;
 }
 
-label{
+.options{
+    cursor:pointer;
     display:flex;
     flex-direction: row;
-    gap:30px
+    padding-top: 60px;
+    padding-left: 60px;
+    gap:40px
 }
