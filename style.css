@@ -78,3 +78,62 @@ span{
     background-color: rgb(255, 255, 255);
     width:10vw;
 }
+/* input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding:30px;
+    font-size: 18px;
+    font: bold;
+
+} */
+
+#inp1
+{
+     border: none;
+    background-color: transparent;
+    outline: none;
+    padding:30px;
+    font-size: 18px;
+    font: bold;
+}
+
+#inp2
+{
+     border: none;
+    background-color: transparent;
+    outline: none;
+    padding:30px;
+    font-size: 18px;
+    font: bold;
+}
+
+#inp3
+{
+     border: none;
+    background-color: transparent;
+    outline: none;
+    padding:10px;
+    /* font-size: 18px; */
+    /* font: bold; */
+}
+
+#inp4
+{
+     border: none;
+    background-color: transparent;
+    outline: none;
+    padding:30px;
+    /* font-size: 18px; */
+    /* font: bold; */
+}
+
+/* #inp5
+{
+     border: none;
+    background-color: transparent;
+    outline: none;
+    padding:30px;
+    font-size: 18px;
+    font: bold;
+} */
