@@ -152,10 +152,19 @@ addpass.addEventListener("click",()=>{
     rem.style.border = "none";
     rem.style.cursor = "pointer";
     rem.style.marginLeft = "10px";
+
+    rem.addEventListener("click", () => {
+        newpass.remove(); 
+        c--; 
+        const index = passengers.indexOf(name);
+        if (index > -1) {
+            passengers.splice(index, 1); 
+        }
+    });
     newpass.textContent=`👤${name}`;
     newpass.appendChild(rem);
     popup.appendChild(newpass);
-    passengers.push(newpass); 
+    passengers.push(name); 
     }
  })
 
@@ -165,10 +174,18 @@ addpass.addEventListener("click",()=>{
    popup.style.display="none";    
  })
 
- decrease.addEventListener("click",(e)=>{
-    e.preventDefault();
-    e.currentTarget.remove();
- })
+ 
+
+//  if(c>0)
+//  {
+//     const diplay_detail = document.createElement('div');
+//     for(let i=0;i<passengers.length;i++)
+//     {
+//         diplay_detail.appendChild(document.createElement('p').textContent=passengers[i]);
+//         diplay_detail.appendChild(document.createElement('br'));
+//     }
+//     body.appendChild(diplay_detail);
+//  }
  
 
 
