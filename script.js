@@ -132,26 +132,36 @@ addpass.addEventListener("click",()=>{
 
  inc.addEventListener("click",(e)=>{
     e.preventDefault();
-    c++;
     if(c>5)
     {
         alert("A maximum of 5 tickets can be bookes at once");
         popup.style.display="none"
     }
+    else if(String(document.getElementById("passdetail").value)==="")
+    {
+        alert("Name cannot be empty");        
+    }
     else{
-        let name =String( document.getElementById("passdetail").value.trim());
-     name=name[0].toUpperCase()+name.slice(1).toLowerCase();
+    c++;
+    let name =String( document.getElementById("passdetail").value.trim());
+    name=name[0].toUpperCase()+name.slice(1).toLowerCase();
     const newpass=document.createElement('div');
+    const rem = document.createElement('button');
+    rem.textContent="❌" 
+    rem.style.background = "none";
+    rem.style.border = "none";
+    rem.style.cursor = "pointer";
+    rem.style.marginLeft = "10px";
     newpass.textContent=`👤${name}`;
+    newpass.appendChild(rem);
     popup.appendChild(newpass);
-
     passengers.push(newpass); 
-
     }
  })
 
 
  done.addEventListener("click",(e)=>{
+    e.preventDefault();
    popup.style.display="none";    
  })
 
