@@ -39,6 +39,7 @@ const ret=document.getElementById("ret");
 const travellers=document.getElementById("travellers");
 
 const arr=[from,to,departure,ret,travellers];
+
 for(let i =0;i<arr.length;i++)
 {
     arr[i].addEventListener("mouseenter",handlenter);
@@ -61,7 +62,6 @@ function handleleave(event)
      const name= event.currentTarget.id;
     document.getElementById(name).style.backgroundColor="white";
     document.getElementById(name).style.fontWeight="normal";
-    
 }
 
 function handleclick(event)
@@ -77,7 +77,7 @@ function getCurrDate()
     const day = String(date.getDate()).padStart(2,"0");
     const month = String(date.getMonth()+1).padStart(2,"0");
     const year =String(date.getFullYear());
-    return `${year}-${month}-${day}`
+    return `${year}-${month}-${day}`;
 }
 
 document.getElementById("inp3").value=getCurrDate();
@@ -89,10 +89,28 @@ function getFutureDate()
     const day = String(future.getDate()).padStart(2,"0");
     const month = String(future.getMonth()+1).padStart(2,"0");
     const year =String(future.getFullYear());
-    return `${year}-${month}-${day}`
+    return `${year}-${month}-${day}`;
 }
 
 document.getElementById("inp3").max=getFutureDate();
+
+const oneway = document.getElementById("oneway");
+const roundtrip = document.getElementById("roundtrip");
+const mutlicity = document.getElementById("mutlicity");
+
+oneway.addEventListener("click",()=>{
+    ret.style.opacity=0.5;
+    ret.disabled=true;
+
+})
+
+roundtrip.addEventListener("click",()=>{
+    ret.style.opacity=1;
+    ret.disabled=false;
+})
+
+
+
 
 
 
