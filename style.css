@@ -135,3 +135,8 @@ span{
     font-size: 18px;
     font: bold;
 } */
+
+#multi{
+    text-decoration: none;
+    color: inherit;
+}

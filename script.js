@@ -82,6 +82,8 @@ function getCurrDate()
 
 document.getElementById("inp3").min=getCurrDate();
 document.getElementById("inp3").value=getCurrDate();
+document.getElementById("inp4").min=getCurrDate();
+document.getElementById("inp4").value=getCurrDate();
 
 function getFutureDate()
 {
@@ -94,6 +96,7 @@ function getFutureDate()
 }
 
 document.getElementById("inp3").max=getFutureDate();
+document.getElementById("inp4").max=getFutureDate();
 
 
 const oneway = document.getElementById("oneway");
@@ -109,6 +112,7 @@ roundtrip.addEventListener("click",()=>{
     ret.style.opacity=1;
     ret.style.pointerEvents ="auto";
 })
+
 
 
 
