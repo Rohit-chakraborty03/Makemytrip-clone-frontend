@@ -113,7 +113,17 @@ roundtrip.addEventListener("click",()=>{
     ret.style.pointerEvents ="auto";
 })
 
+const addpass=document.getElementById("addpass");
+const popup=document.getElementById("popup");
 
+addpass.addEventListener("click",()=>{
+    if(popup.style.display==="block")
+        popup.style.display="none";
+    else
+        popup.style.display="block";
+
+
+})
 
 
 
