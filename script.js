@@ -123,7 +123,47 @@ addpass.addEventListener("click",()=>{
         popup.style.display="block";
 })
 
-// const addpass=document.getElementById("")
+ const inc=document.getElementById("inc");
+ const done=document.getElementById("done");
+ const decrease = document.getElementById("delete");
+
+ let passengers=[];
+ let c=0;
+
+ inc.addEventListener("click",(e)=>{
+    e.preventDefault();
+    c++;
+    if(c>5)
+    {
+        alert("A maximum of 5 tickets can be bookes at once");
+        popup.style.display="none"
+    }
+    else{
+        let name =String( document.getElementById("passdetail").value.trim());
+     name=name[0].toUpperCase()+name.slice(1).toLowerCase();
+    const newpass=document.createElement('div');
+    newpass.textContent=`👤${name}`;
+    popup.appendChild(newpass);
+
+    passengers.push(newpass); 
+
+    }
+ })
+
+
+ done.addEventListener("click",(e)=>{
+   popup.style.display="none";    
+ })
+
+ decrease.addEventListener("click",(e)=>{
+    e.preventDefault();
+    e.currentTarget.remove();
+ })
+ 
+
+
+
+
 
 
 
