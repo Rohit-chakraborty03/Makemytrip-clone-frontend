@@ -1,6 +1,16 @@
 #coming{
-    height:100vh;
+    height:80vh;
     font-size: 80px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#brand{
+    
+    height:10vh;
+    width:100vw;
     display:flex;
     flex-direction: row;
     justify-content: center;
