@@ -1,0 +1,8 @@
+#coming{
+    height:100vh;
+    font-size: 80px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
