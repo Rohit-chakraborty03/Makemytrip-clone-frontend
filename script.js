@@ -121,11 +121,9 @@ addpass.addEventListener("click",()=>{
         popup.style.display="none";
     else
         popup.style.display="block";
-
-
 })
 
-
+// const addpass=document.getElementById("")
 
 
 
