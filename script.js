@@ -80,6 +80,7 @@ function getCurrDate()
     return `${year}-${month}-${day}`;
 }
 
+document.getElementById("inp3").min=getCurrDate();
 document.getElementById("inp3").value=getCurrDate();
 
 function getFutureDate()
@@ -94,19 +95,19 @@ function getFutureDate()
 
 document.getElementById("inp3").max=getFutureDate();
 
+
 const oneway = document.getElementById("oneway");
 const roundtrip = document.getElementById("roundtrip");
-const mutlicity = document.getElementById("mutlicity");
+const multicity = document.getElementById("multicity");
 
 oneway.addEventListener("click",()=>{
     ret.style.opacity=0.5;
-    ret.disabled=true;
-
+    ret.style.pointerEvents ="none";
 })
 
 roundtrip.addEventListener("click",()=>{
     ret.style.opacity=1;
-    ret.disabled=false;
+    ret.style.pointerEvents ="auto";
 })
 
 
