@@ -171,7 +171,8 @@ addpass.addEventListener("click",()=>{
 
  done.addEventListener("click",(e)=>{
     e.preventDefault();
-   popup.style.display="none";    
+   popup.style.display="none";  
+   document.getElementById("passcount").textContent=`Total Passengers:${c}`  
  })
 
  
