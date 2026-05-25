@@ -174,19 +174,27 @@ addpass.addEventListener("click",()=>{
    popup.style.display="none";  
    document.getElementById("passcount").textContent=`Total Passengers:${c}`  
  })
-
  
+ const form = document.querySelector('form');
+ form.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    
+ })
 
-//  if(c>0)
-//  {
-//     const diplay_detail = document.createElement('div');
-//     for(let i=0;i<passengers.length;i++)
-//     {
-//         diplay_detail.appendChild(document.createElement('p').textContent=passengers[i]);
-//         diplay_detail.appendChild(document.createElement('br'));
-//     }
-//     body.appendChild(diplay_detail);
-//  }
+ const sub = document.getElementById("submit");
+ sub.addEventListener("mouseenter",()=>{
+    sub.style.backgroundColor="hsl(299, 96%, 69%)";
+    sub.style.color="hsl(298, 61%, 22%)";
+    sub.style.opacity=1;
+ }
+)
+
+sub.addEventListener("mouseleave",()=>{
+    sub.style.backgroundColor="rgb(58, 0, 111)";
+    sub.style.color="rgb(254, 212, 255)";
+    sub.style.opacity=1;
+ }
+)
  
 
 
