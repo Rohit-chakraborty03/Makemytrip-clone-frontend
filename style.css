@@ -77,14 +77,7 @@ span{
     border-color: rgb(231, 157, 255);
     background-color: rgb(255, 255, 255);
     width:10vw;
-}
-
-/* .booking{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
- 
+} 
 
 #inp1
 {
@@ -125,16 +118,6 @@ span{
     font-size: 12px;
     /* font: bold; */
 }
-
-/* #inp5
-{
-     border: none;
-    background-color: transparent;
-    outline: none;
-    padding:30px;
-    font-size: 18px;
-    font: bold;
-} */
 
 #multi{
     text-decoration: none;
@@ -239,13 +222,6 @@ span{
     width:10vw;
 }
 
-/* .booking{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
- 
-
 #inp1
 {
      border: none;
@@ -286,15 +262,6 @@ span{
     /* font: bold; */
 }
 
-/* #inp5
-{
-     border: none;
-    background-color: transparent;
-    outline: none;
-    padding:30px;
-    font-size: 18px;
-    font: bold;
-} */
 
 #multi{
     text-decoration: none;
@@ -311,24 +278,26 @@ span{
     border:1px solid;
     border-radius: 4px;
     border-color: rgb(253, 139, 252);
-    background: linear-gradient(60deg, #fab6f2, #fedbff);
+    background: linear-gradient(60deg, #fab6f2,#ffffff, #facafb);
     height: 30vh;
     width:100vw;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    background-size: 200%;
     animation-name: bg_col;
-    animation-duration: 1s;
-    animation: alternate;
+    animation-duration: 3s;
+    animation-direction: alternate;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 @keyframes bg_col {
-    from{
-        background: linear-gradient(60deg, #fda7f3, #ffffff);
+    0%{
+        background-position: 0% 50% ;
     }
-    to{
-        background: linear-gradient(60deg, #ffffff, #fda7f3);
+    100%{
+        background-position: 100% 50% ;
     }
     
 }
