@@ -376,4 +376,18 @@ span{
 
 }
 
+#showcase{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.p{
+    width:200px;
+    height:100px;
+}
+
 
