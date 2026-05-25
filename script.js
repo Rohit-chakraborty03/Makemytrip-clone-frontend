@@ -175,12 +175,6 @@ addpass.addEventListener("click",()=>{
    document.getElementById("passcount").textContent=`Total Passengers:${c}`  
  })
  
- const form = document.querySelector('form');
- form.addEventListener("submit",(e)=>{
-    e.preventDefault();
-    
- })
-
  const sub = document.getElementById("submit");
  sub.addEventListener("mouseenter",()=>{
     sub.style.backgroundColor="hsl(299, 96%, 69%)";
@@ -195,6 +189,15 @@ sub.addEventListener("mouseleave",()=>{
     sub.style.opacity=1;
  }
 )
+
+const form = document.querySelector('form');
+ form.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    windows.location.href="flight.html"
+    
+ })
+
+
  
 
 
