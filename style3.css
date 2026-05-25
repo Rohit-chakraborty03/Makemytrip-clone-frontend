@@ -5,22 +5,24 @@ div{
     justify-content: center;
     align-items: center;
     animation-name: disp;
-    animation-duration: 3s;
+    animation-duration: .5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    font-size: 70px;
+     font-weight:bold;
 }
 
 @keyframes disp {
     from{
         widht:0px;
-        opacity:0.2;
-        font-size: 20px;
+        opacity:0.5;
+        font-size: 70px;
         
     }
     to{
         widht:100vh;
         opacity:1;
-        font-weight:bold;
-        font-weight: 1000px;
+       
+        font-weight: 85px;
     }
 }
