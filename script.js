@@ -193,7 +193,7 @@ sub.addEventListener("mouseleave",()=>{
 const form = document.querySelector('form');
  form.addEventListener("submit",(e)=>{
     e.preventDefault();
-    windows.location.href="flight.html"
+    window.location.href="flight.html";
     
  })
 
